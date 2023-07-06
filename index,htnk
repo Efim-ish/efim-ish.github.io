@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MacOS</title>
+	<link rel="icon" href="images/icons/apple-64.png">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="os-screen">
+		<div class="os-header">
+			<div class="os-titlebar">
+				<div class="apple-icon"></div>
+			</div>
+		</div>
+	
+		<div class="os-middle">
+			<div class="app app-hidden" id="notes-app">
+				<div class="app-titlebar">
+					<div class="traffic-button traffic-button-close"></div>
+					<div class="traffic-button traffic-button-minimize"></div>
+					<div class="traffic-button traffic-button-maximize"></div>
+					Notes
+				</div>
+				<div class="app-body">
+					<div class="test">
+						Some text here lol
+					</div>
+				</div>
+			</div>
+			<div class="app app-hidden" id="calculator-app">
+				<div class="app-titlebar">
+					<div class="traffic-button traffic-button-close"></div>
+					<div class="traffic-button traffic-button-minimize"></div>
+					<div class="traffic-button traffic-button-maximize"></div>
+					Calculator
+				</div>
+				<div class="app-body">
+					<div class="test">
+						#calculator here
+					</div>
+				</div>
+			</div>
+		</div> <!-- /screen -->
+	
+		<div class="os-footer">
+			<div class="dock">
+				<div class="icon icon-first" id="finder-icon">
+					<div class="icon-image icon-finder"></div>
+				</div>
+				<div class="icon" id="launchpad-icon">
+					<div class="icon-image icon-launchpad"></div>
+				</div>
+				<div class="icon" id="notes-icon">
+					<div class="icon-image icon-notes"></div>
+				</div> 
+				<div class="icon" id="calculator-icon">
+					<div class="icon-image icon-calculator"></div>
+				</div>
+				<div class="icon icon-last" id="bin-icon">
+					<div class="icon-image icon-bin"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+	<script src="main.js"></script>
+</body>
+
+</html>
