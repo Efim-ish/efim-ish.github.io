@@ -200,6 +200,7 @@ html {
     border: 0;
     width: 100%;
     height: calc(100% - 25px);
+    font-family: inherit;
     font-size: 22px;
     resize: none;
 }
