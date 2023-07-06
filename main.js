@@ -5,6 +5,11 @@ const notesIcon = document.getElementById('notes-icon');
 const calculatorIcon = document.getElementById('calculator-icon');
 const notesApp = document.getElementById('notes-app');
 const calculatorApp = document.getElementById('calculator-app');
+const noteDate = document.getElementById('note-date');
+
+const d = new Date();
+const month = new Intl.DateTimeFormat("en-US", { month: "long" }).format(d);
+noteDate.textContent = `${month} ${d.getDate()}, ${d.getFullYear()} at ${d.getHours()}:${d.getMinutes()}`;
 
 const dragElement = app => {
 
