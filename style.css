@@ -1,0 +1,208 @@
+/* Global */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'SF Pro Display', sans-serif;
+    background-color: lightgray;
+}
+
+/* /Global */
+
+.os-screen {
+    background: url("/img/wallpaper/wallpaper-bigsur.png");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Main Titlebar */
+
+.os-header {
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 24px;
+}
+
+.os-titlebar {
+    width: 100%;
+    height: 24px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+}
+
+/* /Main Titlebar */
+
+/* Dock */
+
+.os-footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 66px;
+}
+
+.dock {
+    max-width: fit-content;
+    height: 60px;
+    margin: 0 auto;
+    bottom: 6px;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+}
+
+.icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 20%;
+    margin: 6px 2px;
+    background-color: rgba(40, 40, 40, 0.6);
+}
+
+.icon:hover {
+    background-color: rgba(100, 100, 100, 0.6);
+    cursor: pointer;
+}
+
+.icon-first {
+    margin-left: 8px;
+}
+
+.icon-last {
+    margin-right: 8px;
+}
+
+.icon-image {
+    width: 100%;
+    height: 100%;
+}
+
+.icon-finder {
+    background: url("img/icons/finder.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.icon-launchpad {
+    background: url("img/icons/launchpad.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.icon-notes {
+    background: url("img/icons/notes.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.icon-calculator {
+    background: url("img/icons/calculator.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.icon-bin {
+    background: url("img/icons/bin.png");
+    background-position: center;
+    background-size: cover;
+}
+
+/* /Dock */
+
+/* Apps */
+.os-middle {
+    width: 100%;
+    height: calc(100vh - 24px - 66px);
+}
+
+.app {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border: 2px solid black;
+}
+
+.app-titlebar {
+    background-color: #32322f;
+    width: 100%;
+    height: 20px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.traffic-button {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 3px 2px;
+    -webkit-app-region: no-drag;
+}
+
+.traffic-button-close {
+    background-color: #fd5951;
+    margin-left: 8px;
+}
+
+.traffic-button-close:hover {
+    background-color: #be4844;
+}
+
+.traffic-button-minimize {
+    background-color: #f1bc39;
+}
+
+.traffic-button-minimize:hover {
+    background-color: #be8d30;
+}
+
+.traffic-button-maximize {
+    background-color: #52c22a;
+}
+
+.traffic-button-maximize:hover {
+    background-color: #269734;
+}
+
+.app-body {
+    width: 100%;
+    height: calc(100% - 20px);
+}
+
+.app-hidden{
+    visibility: hidden;
+}
+
+#notes-app {
+    width: 512px;
+    height: 512px;
+}
+
+#notes-app .app-body {
+    background-color: white;
+}
+
+#calculator-app {
+    width: 240px;
+    height: 300px;
+}
+
+#calculator-app .app-body {
+    background-color: #32322f;
+}
+
+.test {
+    color: wheat;
+    font-size: 30px;
+}
+
+/* /Apps */
