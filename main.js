@@ -9,6 +9,11 @@ const d = new Date();
 const month = new Intl.DateTimeFormat("en-US", { month: "long" }).format(d);
 noteDate.textContent = `${month} ${d.getDate()}, ${d.getFullYear()} at ${d.getHours()}:${d.getMinutes()}`;
 
+// Loading note from local storage
+const notesInputField = document.getElementById('notes-input-field');
+const notesText = localStorage.getItem('notes-text') || '';
+notesInputField.value = notesText;
+
 // Function for dragging windows
 const dragElement = app => {
 
@@ -92,6 +97,11 @@ for (const app of apps) {
 	closeButton.addEventListener('click', () => { toggleApp(app); })
 	minimizeButton.addEventListener('click', () => { toggleApp(app); })
 }
+
+// Saving notes to local storage
+notesInputField.addEventListener('change', () => {
+	localStorage.setItem("notes-text", notesInputField.value);
+})
 
 // Making calculator work
 const calculatorDisplay = document.querySelector('div.calculator-display');
